@@ -1,22 +1,25 @@
-package assignment;
+package assignment1;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Assignment64 {
 
 	public static void main(String[] args) {
+
+		String str[] = new String[3];
+		str[0] = "praveen";
+		str[1] = "gtm";
+		str[2] = "manish";
 		
-		Scanner s1 = new Scanner(System.in);
-		System.out.println("Please enter your age");
-			int age  = s1.nextInt();
-			
-		if (age>18) {
-			System.out.println("You can access www.google.com");
-		}
-		else {
-			
-			throw new ArithmeticException("AirthmeticException");		
-			}
+		System.out.println("array without sorting");
+		System.out.println(str[0]);
+		System.out.println(str[1]);
+		System.out.println(str[2]);
+		System.out.println();
+		Arrays.sort(str);
+		System.out.println("array after sorting");
+		System.out.println(Arrays.toString(str));
+		
 	}
 
 }
